@@ -1,0 +1,31 @@
+1. Install Cypress on VScode terminal
+
+>> npm install cypress --save -dev
+
+2. Open Cypress:
+
+>> npm cypress open
+
+3. Hirerachey
+
+>> testSuite ---- Testcase --- teststep
+   SpecFile ----- Describe block --- it block 
+
+
+4. Assersertion:
+
+a) Implicit  ( should , and are inbuld assertion for Cypress.)
+    should:
+         cy.url().should('include', 'Automation');
+         cy.url().should('eq', 'https://rahulshettyacademy.com/AutomationPractice/');
+         cy.url().should('contains','AutomationPractice')
+    
+    
+    and:
+
+   
+   
+b) Explicit
+    expect : in BDD approach
+    assert : in TDD approach
+
